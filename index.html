@@ -38,18 +38,32 @@
         .menuBtn {
             font-size: 30px;
             cursor: pointer;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M5 19h13M5 5h13"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+        }
+
+        /* Стили для строки поиска */
+        #search {
+            padding-left: 35px;
+            width: 200px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+            background-repeat: no-repeat;
+            background-position: 7px center;
         }
     </style>
 </head>
 <body>
-    <div id="menuBtn" class="menuBtn">☰ Меню</div>
+    <button id="menuBtn" class="menuBtn"></button>
 
     <div id="menu" class="menu">
         <a href="javascript:void(0)" class="closeBtn">×</a>
         <!-- Здесь можно добавить ссылки на другие страницы -->
     </div>
 
-    <input type="text" id="search" placeholder="Поиск..." style="padding-left: 35px; width: 200px; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'); background-repeat: no-repeat; background-position: 7px center;">
+    <input type="text" id="search" placeholder="Поиск...">
 
     <script src="app.js"></script>
 </body>
