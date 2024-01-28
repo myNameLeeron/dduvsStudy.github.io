@@ -24,6 +24,7 @@
             color: #818181;
             display: block;
             transition: 0.3s;
+            border-radius: 12px;
         }
 
         .menu .closeBtn {
@@ -60,15 +61,14 @@
 
     <div id="menu" class="menu">
         <a href="javascript:void(0)" class="closeBtn">×</a>
-        <a href="catalog_video.html">Каталог видео</a>
-        <a href="catalog_photo.html">Каталог фото</a>
-        <a href="catalog_text.html">Каталог текстовых файлов</a>
-        <a href="topics.html">Список тем</a>
-        <a href="updates.html">Обновления</a>
-        <a href="developers.html">Разработчики</a>
+        <input type="text" id="search" placeholder="Поиск...">
+        <a href="catalog_video.html" style="background-color: #ff0000;">Каталог видео</a>
+        <a href="catalog_photo.html" style="background-color: #00ff00;">Каталог фото</a>
+        <a href="catalog_text.html" style="background-color: #0000ff;">Каталог текстовых файлов</a>
+        <a href="topics.html" style="background-color: #ffff00;">Список тем</a>
+        <a href="updates.html" style="background-color: #ff00ff;">Обновления</a>
+        <a href="developers.html" style="background-color: #00ffff;">Разработчики</a>
     </div>
-
-    <input type="text" id="search" placeholder="Поиск...">
 
     <script src="app.js"></script>
 </body>
