@@ -3,30 +3,53 @@
 <head>
     <title>Beta</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Стили для шторки меню */
+        .menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: width 0.6s cubic-bezier(0.1, 0.7, 1.0, 0.1);
         }
-        button, input[type="text"] {
-            border-radius: 12px;
-            padding: 10px 15px;
-            font-size: 16px;
-            margin: 5px;
+
+        .menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
         }
-        input[type="text"] {
-            padding-left: 35px;
-            width: 200px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
-            background-repeat: no-repeat;
-            background-position: 7px center;
+
+        .menu .closeBtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Стили для кнопки меню */
+        .menuBtn {
+            font-size: 30px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <a href="catalogue.html"><button>Каталог відео</button></a>
-    <button>Кнопка 2</button>
-    <button>Кнопка 3</button>
+    <div id="menuBtn" class="menuBtn">☰ Меню</div>
 
-    <input type="text" id="search" placeholder="Поиск...">
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closeBtn">×</a>
+        <!-- Здесь можно добавить ссылки на другие страницы -->
+    </div>
+
+    <input type="text" id="search" placeholder="Поиск..." style="padding-left: 35px; width: 200px; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'); background-repeat: no-repeat; background-position: 7px center;">
 
     <script src="app.js"></script>
 </body>
