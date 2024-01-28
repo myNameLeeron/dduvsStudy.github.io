@@ -2,11 +2,23 @@
 <html>
 <head>
     <title>Каталог видео</title>
+    <style>
+        #search {
+            padding-left: 35px;
+            width: 200px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+            background-repeat: no-repeat;
+            background-position: 7px center;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="search" placeholder="Поиск..." style="padding-left: 35px; width: 200px; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'); background-repeat: no-repeat; background-position: 7px center;">
+    <input type="text" id="search" placeholder="Поиск...">
     <div id="videos">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3YlRoys6YYE?modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Добавьте больше видео по мере необходимости -->
+    </div>
+
     <script src="search.js"></script>
 </body>
 </html>
