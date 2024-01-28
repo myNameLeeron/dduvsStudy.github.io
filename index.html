@@ -25,9 +25,10 @@
             color: #818181;
             display: block;
             transition: 0.3s;
-            border-radius: 12px;
+            border-radius: 12px; /* закругление углов */
             background-color: #f0f0f0; /* светло-серый фон */
             border: 1px solid #000; /* чёрная обводка */
+            margin-bottom: 10px; /* расстояние между кнопками */
         }
 
         .menu .closeBtn {
@@ -36,6 +37,7 @@
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
+            background-color: transparent; /* убираем фон */
         }
 
         /* Стили для кнопки меню */
@@ -51,13 +53,15 @@
 
         /* Стили для строки поиска */
         #search {
-            padding-left: 35px;
-            width: 200px;
+            padding: 10px 20px; /* увеличиваем отступы */
+            width: 90%; /* увеличиваем ширину */
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
             background-repeat: no-repeat;
-            background-position: 7px center;
+            background-position: 10px center; /* центрируем иконку поиска */
             border-radius: 50px; /* полукруглая форма */
             border: 1px solid #000; /* чёрная обводка */
+            margin: 20px auto; /* центрируем строку поиска */
+            display: block; /* делаем строку поиска блочным элементом */
         }
     </style>
 </head>
