@@ -11,10 +11,11 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #111;
+            background-color: #ddd; /* светло-серый фон */
             overflow-x: hidden;
             padding-top: 60px;
             transition: width 0.6s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            border-radius: 0 15px 15px 0; /* закругление справа */
         }
 
         .menu a {
@@ -25,6 +26,8 @@
             display: block;
             transition: 0.3s;
             border-radius: 12px;
+            background-color: #f0f0f0; /* светло-серый фон */
+            border: 1px solid #000; /* чёрная обводка */
         }
 
         .menu .closeBtn {
@@ -53,6 +56,8 @@
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
             background-repeat: no-repeat;
             background-position: 7px center;
+            border-radius: 50px; /* полукруглая форма */
+            border: 1px solid #000; /* чёрная обводка */
         }
     </style>
 </head>
@@ -62,12 +67,12 @@
     <div id="menu" class="menu">
         <a href="javascript:void(0)" class="closeBtn">×</a>
         <input type="text" id="search" placeholder="Поиск...">
-        <a href="catalog_video.html" style="background-color: #ff0000;">Каталог видео</a>
-        <a href="catalog_photo.html" style="background-color: #00ff00;">Каталог фото</a>
-        <a href="catalog_text.html" style="background-color: #0000ff;">Каталог текстовых файлов</a>
-        <a href="topics.html" style="background-color: #ffff00;">Список тем</a>
-        <a href="updates.html" style="background-color: #ff00ff;">Обновления</a>
-        <a href="developers.html" style="background-color: #00ffff;">Разработчики</a>
+        <a href="catalog_video.html">Каталог видео</a>
+        <a href="catalog_photo.html">Каталог фото</a>
+        <a href="catalog_text.html">Каталог текстовых файлов</a>
+        <a href="topics.html">Список тем</a>
+        <a href="updates.html">Обновления</a>
+        <a href="developers.html">Разработчики</a>
     </div>
 
     <script src="app.js"></script>
